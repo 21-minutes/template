@@ -2,7 +2,7 @@
   font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times,
     serif;
   -webkit-font-smoothing: antialiased;
-  primary-text-color: #ededf1;
+  primary-text-color: #ededf1 !important;
 }
 * {
   margin: 0;

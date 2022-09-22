@@ -1,5 +1,5 @@
 .article-content {
-  max-width: 700px;
+  max-width: 900px;
 }
 .template-article {
   display: flex;
@@ -7,12 +7,16 @@
   flex-direction: column;
 }
 .article-title {
-  color: var(primary-text-color);
+  color: #ededf1;
   font-size: 32px;
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.016em;
+  max-width: 900px;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 .article-content {
   font-size: 20px;
@@ -22,5 +26,9 @@
     serif;
   word-break: break-word;
   font-weight: 400;
-  color: var(primary-text-color);
+  color: #ededf1;
+}
+.author-info {
+  display: flex;
+  flex-direction: row;
 }
