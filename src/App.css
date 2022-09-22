@@ -1,7 +1,17 @@
 :root {
-  font-family: "Roboto", sans-serif;
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times,
+    serif;
+  -webkit-font-smoothing: antialiased;
+  primary-text-color: #ededf1;
 }
 * {
   margin: 0;
   padding: 0;
+  color: #ffffff;
+}
+.app-container {
+  background-color: #313944;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
 }

@@ -1,0 +1,26 @@
+.article-content {
+  max-width: 700px;
+}
+.template-article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.article-title {
+  color: var(primary-text-color);
+  font-size: 32px;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.016em;
+}
+.article-content {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.003em;
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times,
+    serif;
+  word-break: break-word;
+  font-weight: 400;
+  color: var(primary-text-color);
+}
