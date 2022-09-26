@@ -15,8 +15,8 @@ function AboutAuthor() {
   console.log(allUsers?.attributes.name);
   return (
     <div className="about-author__container">
-      <div className="container-avatar">{allUsers?.attributes.name}</div>
-      <div className="container-name"></div>
+      <div className="container-avatar"></div>
+      <div className="container-name">{allUsers?.attributes.name}</div>
     </div>
   );
 }
