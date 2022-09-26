@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import SidebarLeft from "./Sections/Sidebar/Sidebar";
 import Content from "./Sections/Content/Content";
 import ProfileSection from "./Sections/ProfileSection/ProfileSection";
