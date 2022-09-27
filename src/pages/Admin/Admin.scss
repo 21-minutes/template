@@ -7,3 +7,8 @@
 .test {
   color: #000000 !important;
 }
+.contaiener {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}

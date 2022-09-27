@@ -1,8 +1,9 @@
 import "./App.scss";
-import SidebarLeft from "./Sections/Sidebar/Sidebar";
-import Content from "./Sections/Content/Content";
-import ProfileSection from "./Sections/ProfileSection/ProfileSection";
-import Admin from "./Sections/Admin/Admin";
+import Admin from "./pages/Admin/Admin";
+// // import Home from "./pages/Home/Home";
+// import SidebarLeft from "./Sections/Sidebar/Sidebar";
+// import Content from "./Sections/Content/Content";
+// import ProfileSection from "./Sections/ProfileSection/ProfileSection";
 
 function App() {
   return (
