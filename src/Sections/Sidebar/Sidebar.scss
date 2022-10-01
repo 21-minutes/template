@@ -3,4 +3,26 @@
   height: 100vh;
   position: sticky;
   border-right: 1px solid #626872;
+  display: block;
+}
+.nav-item {
+  border: solid 1px red;
+  height: 24px;
+  width: 24px;
+}
+.sidebar-left-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 35px;
+}
+.template-sidebar-left {
+  height: 100%;
+}
+@media screen and (max-width: 1080px) {
+  .sidebar-left__container {
+    display: none;
+  }
 }

@@ -3,3 +3,9 @@
   border-left: 1px solid #626872;
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+@media screen and (max-width: 1080px) {
+  .profile-section__container {
+    display: none;
+  }
+}

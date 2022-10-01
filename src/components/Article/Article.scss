@@ -5,7 +5,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
+
 .article-title {
   color: #ededf1;
   font-size: 32px;
@@ -27,14 +29,35 @@
   word-break: break-word;
   font-weight: 400;
   color: #ededf1;
+  padding-bottom: 56px;
 }
 .author-info {
   display: flex;
   flex-direction: row;
 }
+.article__container {
+  height: 100vh;
+
+  overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+.article__container::-webkit-scrollbar {
+  width: 0 !important;
+}
+
 @media screen and (max-width: 1450px) {
   .article-content {
     max-width: 700px;
+  }
+  .article-title {
+    max-width: 700px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .article-content {
+    width: 100vw;
+    padding-bottom: 56px;
   }
   .article-title {
     max-width: 700px;
