@@ -1,10 +1,10 @@
 import "./App.scss";
 import Admin from "./pages/Admin/Admin";
-// import Home from "./pages/Home/Home";
 import SidebarLeft from "./Sections/Sidebar/Sidebar";
-import Content from "./Sections/Content/Content";
 import ProfileSection from "./Sections/ProfileSection/ProfileSection";
 import Footer from "./Sections/Footer/Footer";
+import HomeContent from "./Sections/HomeContent/HomeContent";
+import Content from "./Sections/Content/Content";
 
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
       <div className="app-container">
         {/* <Admin></Admin> */}
         <SidebarLeft />
-        <Content />
+        {/* <Content /> */}
+        <HomeContent></HomeContent>
         <ProfileSection />
       </div>
       <Footer />
