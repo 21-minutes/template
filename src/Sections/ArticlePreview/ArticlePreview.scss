@@ -2,36 +2,85 @@
     font-weight: 700;
     font-size: 22px;
     font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-bottom: 8px;
 }
 .template-article-preview{
     cursor: pointer;
     height: 233px;
-    border: solid red 1px;
-width: 100%;
+    border-bottom: 1px solid #626872;
+    width: 100%;
     max-width: 629px;
+    padding-top: 24px;
 }
 .article-preview__container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    overflow: scroll;
+    overflow: hidden;
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
   }
   .article__container::-webkit-scrollbar {
     width: 0 !important;
   }
-  
-.article-preview-content{
-    
-}
+  .article-preview-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 12px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .header-avatar{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid red;
+  }
+  .header-author{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #ededf1;
+  }
+  .header-date{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #c8cad0;
+  }
 .articel-preview-text{
     display: block;
     height: 72px;
     width: 520px;
-
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
 }
+.article-preview-footer{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px;
+    align-items: center;
+    margin-top: 12px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 13px;
+}
+.footer-topic{
+    border-radius: 100px;
+    color: #000000;
+    background-color: rgba(242, 242, 242, 1);
+    height: 20px;
+    padding: 2px 8px 2px 8px;
+}
+.footer-reading-time{
+    color: #c8cad0;
+}
+
 @media screen and (max-width: 520px) {
     .articel-preview-text{
         display: none;
