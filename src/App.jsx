@@ -12,8 +12,8 @@ function App() {
       <div className="app-container">
         {/* <Admin></Admin> */}
         <SidebarLeft />
-        {/* <Content /> */}
-        <HomeContent></HomeContent>
+        <Content />
+        {/* <HomeContent></HomeContent> */}
         <ProfileSection />
       </div>
       <Footer />

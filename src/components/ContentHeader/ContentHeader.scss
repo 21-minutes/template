@@ -10,7 +10,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: 900px;
+  max-width:800px;
   width: 100%;
   margin-bottom: 32px;
   margin-top: 55px;
@@ -29,6 +29,7 @@
 .author-info {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 10px;
   font-size: 14px;
   font-weight: 400;
@@ -58,5 +59,6 @@
 @media screen and (max-width: 1450px) {
   .content-header__container {
     max-width: 700px;
+    width: calc(100vw - 64px);
   }
 }
