@@ -62,3 +62,9 @@
     width: calc(100vw - 64px);
   }
 }
+@media screen and (max-width: 450px) {
+  
+  .author-socials{
+    display: none;
+  }
+}
