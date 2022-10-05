@@ -1,22 +1,19 @@
 import "./App.scss";
 import Admin from "./pages/Admin/Admin";
-import SidebarLeft from "./Sections/Sidebar/Sidebar";
-import ProfileSection from "./Sections/ProfileSection/ProfileSection";
-import Footer from "./Sections/Footer/Footer";
-import HomeContent from "./Sections/HomeContent/HomeContent";
-import Content from "./Sections/Content/Content";
+import Home from "./pages/Home/Home";
+import Article from "./pages/ArticleContent/ArticleContent";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <div className="app-container">
-        {/* <Admin></Admin> */}
-        <SidebarLeft />
-        <Content />
-        {/* <HomeContent></HomeContent> */}
-        <ProfileSection />
-      </div>
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/admin" element={<Admin />}></Route>
+          <Route path="/article" element={<Article />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
