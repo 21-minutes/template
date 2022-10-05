@@ -1,12 +1,14 @@
 import "./ContentHeader.scss";
 import linkedinIcon from "../../assets/linkedin.svg";
 import linkIcon from "../../assets/link.svg";
+import instagramIcon from "../../assets/instagram.svg";
+import avatar from "../../assets/people/janis_ringli.jpg";
 
 function ContentHeader(props) {
   return (
     <div className="content-header__container">
       <div className="author-section">
-        <div className="author-image"></div>
+        <img className="author-image" src={avatar}></img>
         <div className="container__author">
           <div className="author-name">{props.name}</div>
           <div className="author-info">
@@ -20,7 +22,7 @@ function ContentHeader(props) {
         <div className="socials-item">
           <img className="item-icon" src={linkedinIcon}></img>
           <img className="item-icon" src={linkIcon}></img>
-          <div className="item-icon"></div>
+          <img className="item-icon" src={instagramIcon}></img>
           <div className="item-icon"></div>
         </div>
       </div>
