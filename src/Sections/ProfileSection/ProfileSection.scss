@@ -2,8 +2,12 @@
   width: 25%;
   border-left: 1px solid #626872;
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-left: 32px;
+  padding-right: 32px;
 }
-
+.profile-section__content {
+  max-width: 329px;
+}
 @media screen and (max-width: 1080px) {
   .profile-section__container {
     display: none;
