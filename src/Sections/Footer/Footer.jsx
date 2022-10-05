@@ -1,10 +1,11 @@
 import "./Footer.scss";
+import houseIcon from "../../assets/house.svg";
 
 function Footer() {
   return (
     <div className="footer-container">
       <div className="container-icons">
-        <div className="icon-item"></div>
+        <img className="icon-item" src={houseIcon}></img>
         <div className="icon-item"></div>
         <div className="icon-item"></div>
       </div>

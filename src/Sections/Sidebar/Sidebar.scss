@@ -1,16 +1,14 @@
 .sidebar-left__container {
   width: 5%;
   height: auto;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-
 }
 .nav-item {
-  border: solid 1px red;
   height: 24px;
   width: 24px;
 }
@@ -27,7 +25,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-    position: fixed;
+  position: fixed;
 }
 @media screen and (max-width: 1080px) {
   .sidebar-left__container {
