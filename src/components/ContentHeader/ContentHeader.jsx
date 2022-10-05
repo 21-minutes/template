@@ -1,4 +1,6 @@
 import "./ContentHeader.scss";
+import linkedinIcon from "../../assets/linkedin.svg";
+import linkIcon from "../../assets/link.svg";
 
 function ContentHeader(props) {
   return (
@@ -16,8 +18,8 @@ function ContentHeader(props) {
       </div>
       <div className="author-socials">
         <div className="socials-item">
-          <div className="item-icon"></div>
-          <div className="item-icon"></div>
+          <img className="item-icon" src={linkedinIcon}></img>
+          <img className="item-icon" src={linkIcon}></img>
           <div className="item-icon"></div>
           <div className="item-icon"></div>
         </div>

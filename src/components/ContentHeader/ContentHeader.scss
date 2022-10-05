@@ -10,7 +10,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width:800px;
+  max-width: 800px;
   width: 100%;
   margin-bottom: 32px;
   margin-top: 55px;
@@ -48,7 +48,6 @@
 .item-icon {
   width: 24px;
   height: 24px;
-  border: solid 1px red;
 }
 .socials-item {
   display: flex;
@@ -63,8 +62,7 @@
   }
 }
 @media screen and (max-width: 450px) {
-  
-  .author-socials{
+  .author-socials {
     display: none;
   }
 }
