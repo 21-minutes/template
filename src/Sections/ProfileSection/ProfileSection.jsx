@@ -1,6 +1,7 @@
 import "./ProfileSection.scss";
 import AboutAuthor from "../../components/AboutAuthor/AboutAuthor";
 import SearchInput from "../../components/SearchInput/SearchInput";
+import RecommendedTopics from "../../components/RecommendedTopics/RecommendedTopics";
 
 function ProfileSection() {
   return (
@@ -8,6 +9,7 @@ function ProfileSection() {
       <div className="profile-section__content">
         <SearchInput></SearchInput>
         <AboutAuthor />
+        <RecommendedTopics></RecommendedTopics>
       </div>
     </div>
   );
