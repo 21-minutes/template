@@ -13,19 +13,11 @@ function AboutAuthor() {
     retrieveData();
   }, []);
 
-  console.log(allUsers?.attributes.name);
   return (
     <div className="about-author__container">
       <img className="container-avatar" src={avatar}></img>
-      <div className="container-name">
-        {allUsers?.attributes.name}Janis Ringli
-      </div>
-      <div className="container-bio">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-        accusantium asperiores corporis accusamus dolorum ex, reprehenderit
-        voluptatum dolor tenetur nobis dolorem eum velit quos officiis natus
-        quisquam delectus numquam culpa!
-      </div>
+      <div className="container-name">{allUsers?.attributes.name}</div>
+      <div className="container-bio">{allUsers?.attributes.bio}</div>
     </div>
   );
 }
