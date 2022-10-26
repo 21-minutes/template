@@ -6,10 +6,12 @@ import RecommendedTopics from "../../components/RecommendedTopics/RecommendedTop
 function ProfileSection() {
   return (
     <div className="profile-section__container">
-      <div className="profile-section__content">
-        <SearchInput></SearchInput>
-        <AboutAuthor />
-        <RecommendedTopics></RecommendedTopics>
+      <div className="profile-section-wrapper">
+        <div className="profile-section__content">
+          <SearchInput></SearchInput>
+          <AboutAuthor />
+          <RecommendedTopics></RecommendedTopics>
+        </div>
       </div>
     </div>
   );
