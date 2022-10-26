@@ -18,6 +18,7 @@ function ArticlePreview(props) {
         </div>
         <div className="article-preview-footer">
           <div className="footer-topic">{props.topic}</div>
+          <div className="dot"></div>
           <div className="footer-reading-time">{props.readingTime}</div>
         </div>
       </div>
