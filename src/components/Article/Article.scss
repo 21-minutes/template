@@ -1,15 +1,10 @@
-.article-content {
-  max-width:800px;
-  margin-left: 32px;
-  margin-right: 32px;
-
-}
 .template-article {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  max-width: 800px;
   width: 100%;
-  border-left: 1px solid #626872;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .article-title {
@@ -20,11 +15,15 @@
   line-height: 40px;
   letter-spacing: -0.016em;
   max-width: 800px;
-  text-align: left;
   margin-bottom: 40px;
   margin-top: 20px;
   width: 100%;
+  text-align: left;
 }
+
+// .container-content {
+//   padding-left: 32px;
+// }
 .article-content {
   font-size: 20px;
   line-height: 32px;
@@ -35,6 +34,7 @@
   font-weight: 400;
   color: #ededf1;
   padding-bottom: 56px;
+  text-align: left;
 }
 .author-info {
   display: flex;
@@ -42,16 +42,18 @@
 }
 .article__container {
   height: 100vh;
-
   overflow: scroll;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
+  display: flex;
+  justify-content: center;
 }
+
 .article__container::-webkit-scrollbar {
   width: 0 !important;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1300px) {
   .article-content {
     max-width: 700px;
   }
