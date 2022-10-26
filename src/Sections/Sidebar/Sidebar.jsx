@@ -6,7 +6,9 @@ function SidebarLeft() {
     <div className="sidebar-left__container">
       <div className="template-sidebar-left">
         <div className="sidebar-left-nav">
-          <img className="nav-item" src={houseIcon}></img>
+          <a href="/">
+            <img className="icon-item" src={houseIcon}></img>
+          </a>
           <div className="nav-item"></div>
           <div className="nav-item"></div>
         </div>
