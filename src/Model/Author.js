@@ -2,9 +2,9 @@ export async function getAllUsers() {
   try {
     const response = await fetch("http://127.0.0.1:1337/api/authors/1", {
       method: "GET",
-      headers: new Headers({
-        Authorization: `bearer ${import.meta.env.VITE_REACT_APP_API_TOKEN}`,
-      }),
+      // headers: new Headers({
+      //   Authorization: `bearer ${import.meta.env.VITE_REACT_APP_API_TOKEN}`,
+      // }),
     });
     const payload = await response.json();
     return payload.data;
