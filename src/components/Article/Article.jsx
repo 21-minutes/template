@@ -1,7 +1,7 @@
 import "./Article.scss";
 import ContentHeader from "../../components/ContentHeader/ContentHeader";
 import { getArticles } from "../../Model/Article";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 function Article() {
@@ -13,8 +13,10 @@ function Article() {
       const articleData = await getArticles();
       setArticle(articleData);
     }
+
     retrieveData();
   }, []);
+  document.title = article[articleId - 1]?.attributes.title;
 
   return (
     //TODO: Replace content with api variables
