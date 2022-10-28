@@ -1,0 +1,15 @@
+.home-section__container {
+  width: 25%;
+  border-left: 1px solid #626872;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.home-section__content {
+  max-width: 329px;
+}
+@media screen and (max-width: 1080px) {
+  .home-section__container {
+    display: none;
+  }
+}
