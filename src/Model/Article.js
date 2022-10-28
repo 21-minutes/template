@@ -1,7 +1,9 @@
 export async function getArticles() {
   try {
     const response = await fetch(
-      "http://127.0.0.1:1337/api/articles?populate=topics,thumbnail,author.avatar",
+      `${
+        import.meta.env.VITE_REACT_APP_STRAPI_API_URL
+      }/api/articles?populate=topics,thumbnail,author.avatar&sort[0]=id:desc`,
       {
         method: "GET",
         // headers: new Headers({
@@ -19,7 +21,9 @@ export async function getArticles() {
 export async function getSingleArticle(articleId) {
   try {
     const response = await fetch(
-      `http://127.0.0.1:1337/api/articles/${articleId}?populate=topics,thumbnail,author.avatar`,
+      `${
+        import.meta.env.VITE_REACT_APP_STRAPI_API_URL
+      }/api/articles/${articleId}?populate=topics,thumbnail,author.avatar`,
       {
         method: "GET",
         // headers: new Headers({
@@ -36,7 +40,9 @@ export async function getSingleArticle(articleId) {
 
 export async function createArticle(data) {
   const response = await fetch(
-    `http://127.0.0.1:1337/api/articles?populate=topics,thumbnail,author.avatar`,
+    `${
+      import.meta.env.VITE_REACT_APP_STRAPI_API_URL
+    }/api/articles?populate=topics,thumbnail,author.avatar`,
     {
       method: "GET",
       //   headers: {

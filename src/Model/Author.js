@@ -1,7 +1,9 @@
 export async function getAllUsers() {
   try {
     const response = await fetch(
-      "http://127.0.0.1:1337/api/authors/1?populate=*",
+      `${
+        import.meta.env.VITE_REACT_APP_STRAPI_API_URL
+      }/api/authors/1?populate=*&sort[0]=id:desc`,
       {
         method: "GET",
         // headers: new Headers({
@@ -17,13 +19,18 @@ export async function getAllUsers() {
 }
 
 export async function createUser(data) {
-  const response = await fetch(`127.0.0.1:1337/api/authors/1?populate=*`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${process.env.API_TOKEN}`,
-    },
-    body: JSON.stringify({ user: data }),
-  });
+  const response = await fetch(
+    `${
+      import.meta.env.VITE_REACT_APP_STRAPI_API_URL
+    }/api/authors/1?populate=*&sort[0]=id:desc`,
+    {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.API_TOKEN}`,
+      },
+      body: JSON.stringify({ user: data }),
+    }
+  );
   return await response.json();
 }
