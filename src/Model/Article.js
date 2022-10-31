@@ -21,9 +21,7 @@ export async function getArticles() {
 export async function getSingleArticle(articleId) {
   try {
     const response = await fetch(
-      `${
-        import.meta.env.VITE_REACT_APP_STRAPI_API_URL
-      }/api/articles/${articleId}?populate=topics,thumbnail,author.avatar`,
+      `https://janisringli-blog-backend.herokuapp.com/api/articles/${articleId}?populate=topics,thumbnail,author.avatar`,
       {
         method: "GET",
         // headers: new Headers({
@@ -40,9 +38,7 @@ export async function getSingleArticle(articleId) {
 
 export async function createArticle(data) {
   const response = await fetch(
-    `${
-      import.meta.env.VITE_REACT_APP_STRAPI_API_URL
-    }/api/articles?populate=topics,thumbnail,author.avatar`,
+    `https://janisringli-blog-backend.herokuapp.com/api/articles?populate=topics,thumbnail,author.avatar`,
     {
       method: "GET",
       //   headers: {

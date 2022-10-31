@@ -25,10 +25,7 @@ function AboutAuthor() {
     <div className="about-author__container">
       <img
         className="container-avatar"
-        src={`${import.meta.env.VITE_REACT_APP_STRAPI_API_URL}${
-          article?.attributes.author.data?.attributes.avatar.data?.attributes
-            .formats.medium.url
-        }`}
+        src={`https://janisringli-blog-backend.herokuapp.com${article?.attributes.author.data?.attributes.avatar.data?.attributes.formats.medium.url}`}
       ></img>
       <div className="container-name">
         {article?.attributes.author.data?.attributes.name}

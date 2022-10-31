@@ -13,6 +13,7 @@ function Content() {
     }
     retrieveData();
   }, []);
+  console.log(article);
 
   return (
     <div className="home-content__container">
@@ -29,10 +30,7 @@ function Content() {
               <div className="article-preview-header">
                 <img
                   className="header-avatar"
-                  src={`${import.meta.env.VITE_REACT_APP_STRAPI_API_URL}${
-                    article?.attributes.author.data?.attributes.avatar.data
-                      ?.attributes.formats.small.url
-                  }`}
+                  src={`https://janisringli-blog-backend.herokuapp.com${article?.attributes.author.data?.attributes.avatar.data?.attributes.formats.small.url}`}
                 ></img>
                 <div className="header-author">
                   {article?.attributes.author.data?.attributes.name}
@@ -52,10 +50,7 @@ function Content() {
                 </div>
                 <img
                   className="article-preview-image"
-                  src={`${import.meta.env.VITE_REACT_APP_STRAPI_API_URL}${
-                    article?.attributes.thumbnail.data?.attributes.formats
-                      .thumbnail.url
-                  }`}
+                  src={`https://janisringli-blog-backend.herokuapp.com${article?.attributes.thumbnail.data?.attributes.formats.thumbnail.url}`}
                 ></img>
               </div>
               <div className="article-preview-footer">
