@@ -13,7 +13,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           local-dir: ./src/
-          server-dir: .blog/janisringli.ch/
+          server-dir: ./blog.janisringli.ch/
           state-name: .htsync
           server: sl203.web.hostpoint.ch
           port: 21
