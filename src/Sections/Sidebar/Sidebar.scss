@@ -1,6 +1,36 @@
 .sidebar-left__container {
   width: 5%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  position: sticky;
+
   border-right: 1px solid #626872;
+}
+.nav-item {
+  height: 24px;
+  width: 24px;
+}
+.sidebar-left-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+.template-sidebar-left {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+@media screen and (max-width: 1080px) {
+  .sidebar-left__container {
+    display: none;
+  }
 }

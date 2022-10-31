@@ -1,0 +1,25 @@
+.topic-item {
+  border-radius: 100px;
+  color: #000000;
+  background-color: #f2f2f2;
+  height: 20px;
+  width: fit-content;
+  padding: 8px 16px;
+  cursor: pointer;
+  max-width: 329px;
+  overflow: hidden;
+}
+.recommended-topics__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.recommended-topics__container {
+  margin-top: 40px;
+}
+.recommended-topics__title {
+  padding-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+}

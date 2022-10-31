@@ -1,0 +1,24 @@
+:root {
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times,
+    serif;
+  -webkit-font-smoothing: antialiased;
+  primary-text-color: #ededf1;
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+.app-container {
+  background-color: #313944;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.dot{
+  height: 3px;
+  width: 3px;
+  background-color: #c8cad0;
+  border-radius: 50%;
+}

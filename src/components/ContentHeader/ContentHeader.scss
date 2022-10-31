@@ -2,15 +2,15 @@
   height: 48px;
   width: 48px;
   border-radius: 50%;
-  border: 1px solid red;
   margin-right: 20px;
+  object-fit: cover;
 }
 .content-header__container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: 900px;
+  max-width: 800px;
   width: 100%;
   margin-bottom: 32px;
   margin-top: 55px;
@@ -29,6 +29,7 @@
 .author-info {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 10px;
   font-size: 14px;
   font-weight: 400;
@@ -47,10 +48,27 @@
 .item-icon {
   width: 24px;
   height: 24px;
-  border: solid 1px red;
 }
 .socials-item {
   display: flex;
   flex-direction: row;
   gap: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+  .content-header__container {
+    max-width: 700px;
+    width: calc(100vw - 64px);
+  }
+}
+@media screen and (max-width: 1080px) {
+  .content-header__container {
+    max-width: 100%;
+    width: calc(100vw - 64px);
+  }
+}
+@media screen and (max-width: 450px) {
+  .author-socials {
+    display: none;
+  }
 }
