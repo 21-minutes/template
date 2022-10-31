@@ -1,9 +1,7 @@
 export async function getArticles() {
   try {
     const response = await fetch(
-      `${
-        import.meta.env.VITE_REACT_APP_STRAPI_API_URL
-      }/api/articles?populate=topics,thumbnail,author.avatar&sort[0]=id:desc`,
+      `https://janisringli-blog-backend.herokuapp.com/api/articles?populate=topics,thumbnail,author.avatar&sort[0]=id:desc`,
       {
         method: "GET",
         // headers: new Headers({
