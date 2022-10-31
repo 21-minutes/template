@@ -1,3 +1,4 @@
+
 name: Deployment
 on:
   push:
@@ -9,11 +10,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      - uses: actions/setup-node@v2
         with:
-          local-dir: ./src/
-          server-dir: .blog/janisringli.ch/
+          node-version: "12"
+          cache: "npm"
+      - name: Build
+        run: |
+          npm install
+          npm run build
+      - uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          local-dir: ./dist/
+          server-dir: ./calc.janisringli.ch/
           state-name: .htsync
           server: sl203.web.hostpoint.ch
           port: 21
