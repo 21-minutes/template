@@ -25,10 +25,7 @@ function ContentHeader() {
       <div className="author-section">
         <img
           className="author-image"
-          src={`${import.meta.env.VITE_REACT_APP_STRAPI_API_URL}${
-            article?.attributes.author.data?.attributes.avatar.data?.attributes
-              .formats.small.url
-          }`}
+          src={`https://janisringli-blog-backend.herokuapp.com${article?.attributes.author.data?.attributes.avatar.data?.attributes.formats.small.url}`}
         ></img>
         <div className="container__author">
           <div className="author-name">
